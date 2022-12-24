@@ -84,9 +84,9 @@
     #if CONFIG_BROKER_CERTIFICATE_OVERRIDDEN == 1
     static const char root_cert_auth_pem_start[]  = "-----BEGIN CERTIFICATE-----\n" CONFIG_BROKER_CERTIFICATE_OVERRIDE "\n-----END CERTIFICATE-----";
     #else
-    extern const char root_cert_auth_pem_start[]   asm("_binary_root_cert_auth_pem_start");
+    extern const char root_cert_auth_pem_start[]   asm("_binary_rootca_crt_start");
     #endif
-    extern const char root_cert_auth_pem_end[]   asm("_binary_root_cert_auth_pem_end");
+    extern const char root_cert_auth_pem_end[]   asm("_binary_rootca_crt_end");
 #endif
 
 #ifndef CLIENT_IDENTIFIER
