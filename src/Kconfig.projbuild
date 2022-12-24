@@ -1,19 +1,19 @@
 menu "Example Configuration"
 
-config CONFIG_MQTT_CLIENT_IDENTIFIER
+config MQTT_CLIENT_IDENTIFIER
     string "The MQTT client identifier used in this example"
 	default "test"
 	help
         The MQTT client identifier used in this example. Each client identifier must be unique.
         so edit as required to ensure that no two clients connecting to the same broker use the same client identifier.
 
-config CONFIG_MQTT_BROKER_ENDPOINT
+config MQTT_BROKER_ENDPOINT
     string "Endpoint of the MQTT broker to connect to"
     default "test.mosquitto.org"
     help
         This example can be run with any MQTT broker, that supports server authentication.
 
-config CONFIG_MQTT_BROKER_PORT
+config MQTT_BROKER_PORT
     int "Port of the MQTT broker use"
     default 8883
     help
@@ -43,7 +43,7 @@ config MQTT_EXAMPLE_STACKSIZE
     help
         The actual stack is created by an operating system thread.
 
-config CONFIG_MQTT_NETWORK_BUFFER_SIZE
+config MQTT_NETWORK_BUFFER_SIZE
     int "Size of the network buffer for MQTT packets"
     range 1024 2048
     default 1024
