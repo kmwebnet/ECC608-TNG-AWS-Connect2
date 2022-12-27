@@ -10,6 +10,7 @@ set(COMPONENT_SRCDIRS   "${CRYPTOAUTHLIB_DIR}"
                         "${CRYPTOAUTHLIB_DIR}/host"
                         "${CRYPTOAUTHLIB_DIR}/mbedtls"
                         "cryptoauthlib/app/tng"
+                        "cryptoauthlib/third_party"
                         ".")
 
 set(COMPONENT_SRCS      "${COMPONENT_DIR}/cryptoauthlib/lib/hal/atca_hal.c"
@@ -23,6 +24,7 @@ set(COMPONENT_SRCS      "${COMPONENT_DIR}/cryptoauthlib/lib/hal/atca_hal.c"
 set(COMPONENT_INCLUDEDIRS   "${CRYPTOAUTHLIB_DIR}/"
                             "${CRYPTOAUTHLIB_DIR}/hal"
                             "cryptoauthlib/app/tng"
+                            "cryptoauthlib/third_party"
                             "."
                             )
 
