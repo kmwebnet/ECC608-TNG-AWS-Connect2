@@ -16,7 +16,6 @@ set(COMPONENT_SRCDIRS   "${CRYPTOAUTHLIB_DIR}"
 set(COMPONENT_SRCS      "${COMPONENT_DIR}/cryptoauthlib/lib/hal/atca_hal.c"
                         "${COMPONENT_DIR}/cryptoauthlib/lib/hal/hal_freertos.c"
                         "${COMPONENT_DIR}/cryptoauthlib/lib/hal/hal_esp32_timer.c"
-                        "${COMPONENT_DIR}/cryptoauthlib/lib/hal/hal_esp32_i2c.c"
                         "atca_cfgs_port.c"
                         )
 
@@ -32,6 +31,7 @@ set(COMPONENT_REQUIRES      "mbedtls" "freertos" "driver")
 
 set(COMPONENT_EXCLUDE_SRCS 
                         "${CRYPTOAUTHLIB_DIR}/atca_cfgs.c"
+                        "${CRYPTOAUTHLIB_DIR}/hal/hal_esp32_i2c.c"
                         )
 
 set(COMPONENT_CFLAGS "ESP32" "ATCA_HAL_I2C" "ATCA_USE_RTOS_TIMER")
