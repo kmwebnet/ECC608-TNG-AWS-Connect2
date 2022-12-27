@@ -48,5 +48,5 @@ menu "cryptoauthlib"
 
     config ESP_TLS_USE_SE
         bool "ESP32 uses Secure Element"
-        default ESP_TLS_USE_SE
+
 endmenu # cryptoauthlib
