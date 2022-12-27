@@ -51,7 +51,7 @@ target_compile_options(${COMPONENT_LIB} PRIVATE -Wno-pointer-sign)
 idf_component_get_property(freertos_dir freertos COMPONENT_DIR)
 set_source_files_properties(${CRYPTOAUTHLIB_DIR}/hal/hal_freertos.c PROPERTIES COMPILE_FLAGS -I${freertos_dir}/include/freertos)
 
-target_include_directories(${COMPONENT_LIB} PUBLIC ${COMPONENT_DIR}/cryptoauthlib/lib)
+target_include_directories(${COMPONENT_LIB} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/cryptoauthlib/lib)
 
 # Turn off some warnings for some files that have been checked
 set_source_files_properties(hal_esp32_i2c.c PROPERTIES COMPILE_FLAGS "-Wno-unused-variable -Wno-unused-but-set-variable")
