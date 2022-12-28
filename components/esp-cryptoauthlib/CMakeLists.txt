@@ -35,7 +35,7 @@ set(COMPONENT_EXCLUDE_SRCS
                         "${CRYPTOAUTHLIB_DIR}/hal/hal_esp32_i2c.c"
                         )
 
-set(COMPONENT_CFLAGS "ESP32" "ATCA_HAL_I2C" "ATCA_USE_RTOS_TIMER")
+set(COMPONENT_CFLAGS "ESP32" "ATCA_HAL_I2C")
 
 idf_component_register(
     SRC_DIRS "${COMPONENT_SRCDIRS}" 
