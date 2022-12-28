@@ -31,6 +31,7 @@
 #define ATCA_POST_DELAY_MSEC 25
 #endif
 
-#define hal_delay_ms atca_delay_ms_internal
+#define atca_delay_ms   hal_delay_ms
+#define atca_delay_us   hal_delay_us
 
 #endif // ATCA_CONFIG_H
