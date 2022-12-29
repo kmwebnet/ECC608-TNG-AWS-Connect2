@@ -52,7 +52,7 @@ config MQTT_NETWORK_BUFFER_SIZE
 
 choice EXAMPLE_CHOOSE_PKI_ACCESS_METHOD
     prompt "Choose PKI credentials access method"
-    default EXAMPLE_USE_PLAIN_FLASH_STORAGE
+    default EXAMPLE_USE_SECURE_ELEMENT
     help
         ESP devices support multiple ways to secure store the PKI credentials.
         Currently Secure Element (ATECC608A) and DS peripheral are supported.
