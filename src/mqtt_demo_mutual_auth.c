@@ -639,8 +639,8 @@ static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext
     /* If #CLIENT_USERNAME is defined, username/password is used for authenticating
      * the client. */
 #ifdef CONFIG_EXAMPLE_USE_SECURE_ELEMENT
-    pNetworkContext->pcClientCertPem = NULL;
-    pNetworkContext->pcClientKeyPem = NULL;
+    pNetworkContext->pcClientCertPem = "NULL";
+    pNetworkContext->pcClientKeyPem = "NULL";
     pNetworkContext->use_secure_element = true;
 #elif CONFIG_EXAMPLE_USE_DS_PERIPHERAL
     pNetworkContext->pcClientCertPem = client_cert_pem_start;
