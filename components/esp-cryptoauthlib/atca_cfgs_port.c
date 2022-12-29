@@ -12,7 +12,7 @@
 /** \brief default configuration for an ECCx08A device */
 ATCAIfaceCfg cfg_ateccx08a_i2c_default = {
     .iface_type             = ATCA_I2C_IFACE,
-    .devtype                = ATECC608A,
+    .devtype                = ATECC608,
     .atcai2c.address        = 0x6A,
     .atcai2c.bus            = 0,
     .atcai2c.baud           = 100000,
