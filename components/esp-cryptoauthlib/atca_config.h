@@ -2,6 +2,7 @@
 #ifndef ATCA_CONFIG_H
 #define ATCA_CONFIG_H
 
+#define ATCA_HAL_I2C
 
 /* Included device support */
 #define ATCA_ATECC608A_SUPPORT
